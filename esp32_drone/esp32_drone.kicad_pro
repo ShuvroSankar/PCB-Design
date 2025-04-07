@@ -448,7 +448,8 @@
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
-      "EE_NON_BOM"
+      "EE_NON_BOM",
+      "EE_Rssistor"
     ]
   },
   "meta": {
@@ -474,14 +475,59 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "PWR_1A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(255, 78, 78)",
+        "wire_width": 10
+      },
+      {
+        "name": "PWR_2A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "bus_width": 12,
+        "name": "PWR_GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 8
+      },
+      {
+        "name": "USB90R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(17, 19, 255)"
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "GND": [
+        "PWR"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "PWR_1A",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "USB90R",
+        "pattern": "/Power Managment/USB*"
+      },
+      {
+        "netclass": "PWR_GND",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

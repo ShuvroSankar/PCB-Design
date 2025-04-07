@@ -12,6 +12,168 @@
 		(comment 1 "Drawing RG")
 	)
 	(lib_symbols
+		(symbol "EE_NON_BOM:Fiducial-1mmPad2mmMask"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial-1mmPad2mmMask"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker -  1mm Pad 2mm Mask"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial-1mmPad2mmMask_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EE_NON_BOM:MountingHole_-_1mm_Pad_2mm_Mask"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_- 2.5mm"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MountingHole:MountingHole_2.5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_-_1mm_Pad_2mm_Mask_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -275,6 +437,18 @@
 		)
 		(uuid 0105422e-a921-4950-bcd8-e26e673366aa)
 	)
+	(rectangle
+		(start 17.78 91.44)
+		(end 69.85 132.08)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0b1d4b68-06fc-4e91-90c6-d4a68b331c82)
+	)
 	(text "EN"
 		(exclude_from_sim no)
 		(at 121.92 30.48 0)
@@ -487,7 +661,7 @@
 	)
 	(text_box "Non BOM Items\n"
 		(exclude_from_sim no)
-		(at 19.05 95.25 0)
+		(at 17.78 81.28 0)
 		(size 52.07 6.35)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -587,7 +761,7 @@
 	)
 	(text_box "Additional BOM items"
 		(exclude_from_sim no)
-		(at 19.05 106.68 0)
+		(at 17.78 135.89 0)
 		(size 52.07 6.35)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -605,7 +779,7 @@
 		)
 		(uuid "8bfb7b1a-8db5-4fb4-bbe6-a325ab4a7045")
 	)
-	(text_box "Introduction\n"
+	(text_box "Introduction\n\nIts PCB using esp32 WROOM dev board to be used as a flight controller for anonomus drone\n"
 		(exclude_from_sim no)
 		(at 16.51 27.94 0)
 		(size 53.34 17.78)
@@ -665,10 +839,10 @@
 		)
 		(uuid "a56f2462-34d2-4ef2-ae04-69fc02b6573d")
 	)
-	(text_box "Page 1: Top sheet\n"
+	(text_box "Page 1: Top sheet\nPage 2: Power Managment\nPage 3: ESP32\nPage 4: Peripharals"
 		(exclude_from_sim no)
 		(at 17.78 62.23 0)
-		(size 53.34 27.94)
+		(size 53.34 13.97)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -853,6 +1027,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 149.86) (xy 148.59 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7370d6de-a082-499d-a399-08ae0283d0b8")
+	)
+	(wire
+		(pts
 			(xy 123.19 74.93) (xy 137.16 74.93)
 		)
 		(stroke
@@ -900,6 +1084,16 @@
 			(type default)
 		)
 		(uuid "9ba83212-7535-4331-a998-70af63a6ff68")
+	)
+	(wire
+		(pts
+			(xy 137.16 142.24) (xy 148.59 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cf3b0f2-5f1f-4233-8ea3-ef4429778810")
 	)
 	(wire
 		(pts
@@ -1052,6 +1246,198 @@
 		(uuid "febb57b5-f7f2-40e3-b630-1e5c2346a95a")
 	)
 	(symbol
+		(lib_id "EE_NON_BOM:MountingHole_-_1mm_Pad_2mm_Mask")
+		(at 46.99 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0addec3b-3921-40f2-9382-a8ff42a2a4dc")
+		(property "Reference" "H4"
+			(at 49.53 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_2.5mm"
+			(at 49.53 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 46.99 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 46.99 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32_drone"
+				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EE_NON_BOM:MountingHole_-_1mm_Pad_2mm_Mask")
+		(at 46.99 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d95fe8d-187f-41ae-b0d9-37f74b71709a")
+		(property "Reference" "H3"
+			(at 49.53 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_2.5mm"
+			(at 49.53 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 46.99 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 46.99 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32_drone"
+				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EE_NON_BOM:Fiducial-1mmPad2mmMask")
+		(at 21.59 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "341b9b5c-29c6-4ce6-b37e-fceec5a9b647")
+		(property "Reference" "FID1"
+			(at 24.13 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1mm Pad 2mm Mask"
+			(at 24.13 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 24.13 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker -  1mm Pad 2mm Mask"
+			(at 21.59 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
+					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 146.05 21.59 0)
 		(unit 1)
@@ -1113,6 +1499,70 @@
 			(project "esp32_drone"
 				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EE_NON_BOM:MountingHole_-_1mm_Pad_2mm_Mask")
+		(at 46.99 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72227d5a-f105-4315-917e-0d7943c8ea95")
+		(property "Reference" "H2"
+			(at 49.53 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_2.5mm"
+			(at 49.53 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 46.99 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 46.99 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32_drone"
+				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -1319,6 +1769,198 @@
 		)
 	)
 	(symbol
+		(lib_id "EE_NON_BOM:Fiducial-1mmPad2mmMask")
+		(at 21.59 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d07b2f33-956e-4e10-a919-cbe6b5d81d8f")
+		(property "Reference" "FID3"
+			(at 24.13 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1mm Pad 2mm Mask"
+			(at 24.13 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 24.13 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker -  1mm Pad 2mm Mask"
+			(at 21.59 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32_drone"
+				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
+					(reference "FID3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EE_NON_BOM:Fiducial-1mmPad2mmMask")
+		(at 21.59 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "dca3ac89-ba8d-49d8-aae0-d54739c5234a")
+		(property "Reference" "FID2"
+			(at 24.13 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1mm Pad 2mm Mask"
+			(at 24.13 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 24.13 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker -  1mm Pad 2mm Mask"
+			(at 21.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32_drone"
+				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
+					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EE_NON_BOM:MountingHole_-_1mm_Pad_2mm_Mask")
+		(at 46.99 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9a593c2-6f62-4b03-9d9b-c636aebe53ef")
+		(property "Reference" "H1"
+			(at 49.53 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_2.5mm"
+			(at 49.53 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 46.99 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 46.99 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/ec5af0b4-a649-4cc1-b8ff-f292a97e3b3e"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 121.92 85.09 0)
 		(unit 1)
@@ -1385,7 +2027,7 @@
 		)
 	)
 	(sheet
-		(at 91.44 137.16)
+		(at 91.44 134.62)
 		(size 45.72 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1401,7 +2043,7 @@
 		)
 		(uuid "2422ede1-f1b7-4cf0-9e3f-9d30e58e36a7")
 		(property "Sheetname" "Power Managment"
-			(at 91.44 136.4484 0)
+			(at 91.44 133.9084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1409,13 +2051,33 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
-			(at 91.44 164.4146 0)
+		(property "Sheetfile" "Power Managment.kicad_sch"
+			(at 91.44 161.8746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "USB_DN" bidirectional
+			(at 137.16 149.86 0)
+			(uuid "306ae91d-0e78-4b4d-94e4-b3c6f350c557")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DP" bidirectional
+			(at 137.16 142.24 0)
+			(uuid "d9d9a031-53f6-48ce-8626-21d5d2e7fd17")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1427,7 +2089,7 @@
 		)
 	)
 	(sheet
-		(at 190.5 138.43)
+		(at 190.5 135.89)
 		(size 33.02 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1443,7 +2105,7 @@
 		)
 		(uuid "307c555a-8f48-4d63-9535-3ab28b7307ed")
 		(property "Sheetname" "Peripharals"
-			(at 190.5 137.7184 0)
+			(at 190.5 135.1784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1451,8 +2113,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
-			(at 190.5 164.4146 0)
+		(property "Sheetfile" "Peripharals.kicad_sch"
+			(at 190.5 161.8746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1469,7 +2131,7 @@
 		)
 	)
 	(sheet
-		(at 148.59 138.43)
+		(at 148.59 135.89)
 		(size 30.48 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1485,7 +2147,7 @@
 		)
 		(uuid "ce1fa78c-16af-490b-aa87-d6d948c5e7e2")
 		(property "Sheetname" "ESP32"
-			(at 148.59 137.7184 0)
+			(at 148.59 135.1784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1493,13 +2155,33 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
-			(at 148.59 163.1446 0)
+		(property "Sheetfile" "ESP32.kicad_sch"
+			(at 148.59 160.6046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "USB_DN" bidirectional
+			(at 148.59 149.86 180)
+			(uuid "29ea7da3-e7bd-40d5-a64a-a2c66af3ea5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_DP" bidirectional
+			(at 148.59 142.24 180)
+			(uuid "4ded9175-4de2-4567-9540-38f812313d8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
